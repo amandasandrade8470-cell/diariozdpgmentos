@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Auto Mais | Serviços Automotivos</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #e30613;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #e30613;
+        }
+
+        .hero {
+            background: #151515;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 span {
+            color: #e30613;
+        }
+
+        .hero p {
+            color: #ccc;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .botao {
+            display: inline-block;
+            background: #e30613;
+            color: white;
+            padding: 14px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background: #b9000b;
+        }
+
+        section {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .linha {
+            width: 60px;
+            height: 4px;
+            background: #e30613;
+            margin: 0 auto 35px;
+        }
+
+        .servicos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px #0001;
+        }
+
+        .card h3 {
+            color: #e30613;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+        .sobre {
+            background: #111;
+            color: white;
+        }
+
+        .sobre p {
+            max-width: 700px;
+            margin: auto;
+            color: #ccc;
+            line-height: 1.7;
+        }
+
+        .contato {
+            background: white;
+        }
+
+        .contato p {
+            margin: 10px;
+            color: #555;
+        }
+
+        footer {
+            background: #080808;
+            color: #888;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer strong {
+            color: #e30613;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 5px;
+                font-size: 14px;
+            }
+
+            .hero h2 {
+                font-size: 36px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>AUTO MAIS</h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+    </header>
+
+
+    <section class="hero" id="inicio">
+
+        <h2>
+            Seu carro merece
+            <span>o melhor cuidado.</span>
+        </h2>
+
+        <p>
+            Manutenção e serviços automotivos em Erechim - RS.
+        </p>
+
+        <a
+            class="botao"
+            href="https://wa.me/5554999374699"
+            target="_blank">
+
+            Falar pelo WhatsApp
+
+        </a>
+
+    </section>
+
+
+    <section id="servicos">
+
+        <h2>Nossos Serviços</h2>
+
+        <div class="linha"></div>
+
+        <div class="servicos">
+
+            <div class="card">
+
+                <h3>🔧 Manutenção Mecânica</h3>
+
+                <p>
+                    Manutenção e reparação mecânica
+                    para diferentes tipos de veículos.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>🚗 Revisão</h3>
+
+                <p>
+                    Cuidados e verificações para manter
+                    seu veículo funcionando corretamente.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>🔋 Baterias</h3>
+
+                <p>
+                    Venda e soluções em baterias
+                    automotivas.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>⚙️ Serviços Automotivos</h3>
+
+                <p>
+                    Soluções para manutenção e reparação
+                    do seu veículo.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="sobre" id="sobre">
+
+        <h2>Sobre a Auto Mais</h2>
+
+        <div class="linha"></div>
+
+        <p>
+            A Auto Mais Serviços Automotivos atua no segmento
+            de manutenção e reparação mecânica de veículos.
+            Nosso objetivo é oferecer um atendimento de qualidade,
+            buscando sempre segurança e confiança para nossos clientes.
+        </p>
+
+    </section>
+
+
+    <section class="contato" id="contato">
+
+        <h2>Entre em Contato</h2>
+
+        <div class="linha"></div>
+
+        <p>
+            📍 Rua Henrique Córdova, 53 - Erechim/RS
+        </p>
+
+        <p>
+            📞 (54) 99937-4699
+        </p>
+
+        <br>
+
+        <a
+            class="botao"
+            href="https://wa.me/5554999374699"
+            target="_blank">
+
+            Chamar no WhatsApp
+
+        </a>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 <strong>Auto Mais Serviços Automotivos</strong>
+        </p>
+
+        <p>
+            CNPJ: 46.518.347/0001-21
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
